@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Animation by Example</string>
+    <string name="animate">Animate</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="visibility">Visibility</string>
+    <string name="translate_y">Translate Y</string>
+    <string name="translate_xy">Launch</string>
+</resources>

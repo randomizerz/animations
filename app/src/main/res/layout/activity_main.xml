@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_frames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ani_arrows"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visibility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_frames" />
+
+    <ImageView
+        android:id="@+id/iv_rocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_rocket_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_rocket_launch"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/outline_rocket_launch_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_animate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/animate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show"
+        app:layout_constraintStart_toEndOf="@id/btn_animate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hide"
+        app:layout_constraintStart_toEndOf="@id/btn_show"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_translate_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/translate_y"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_animate" />
+
+    <Button
+        android:id="@+id/btn_launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/translate_xy"
+        app:layout_constraintStart_toEndOf="@id/btn_translate_y"
+        app:layout_constraintTop_toBottomOf="@id/btn_animate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
